@@ -55,60 +55,66 @@ const experiences = [
   },
 ]
 
+import { ScrollReveal } from "@/components/scroll-reveal"
+
 export function ExperienceSection() {
   return (
     <section id="experience" className="py-24 px-6 lg:px-12 bg-card/50">
       <div className="max-w-5xl mx-auto">
-        <div className="flex items-center gap-4 mb-12">
-          <div className="h-px flex-1 bg-border" />
-          <h2 className="text-sm font-mono text-primary uppercase tracking-wider">Experiência</h2>
-          <div className="h-px flex-1 bg-border" />
-        </div>
+        <ScrollReveal>
+          <div className="flex items-center gap-4 mb-12">
+            <div className="h-px flex-1 bg-border" />
+            <h2 className="text-sm font-mono text-primary uppercase tracking-wider">Experiência</h2>
+            <div className="h-px flex-1 bg-border" />
+          </div>
+        </ScrollReveal>
 
         <div className="space-y-2">
           {experiences.map((exp, index) => (
-            <div
-              key={index}
-              className="group grid md:grid-cols-[180px_1fr] gap-4 p-6 rounded-lg hover:bg-secondary/50 transition-colors"
-            >
-              <div className="text-sm text-muted-foreground font-mono">{exp.period}</div>
+            <ScrollReveal key={index} direction="up" delay={0.2 + index * 0.1}>
+              <div
+                className="group grid md:grid-cols-[180px_1fr] gap-4 p-6 rounded-lg hover:bg-secondary/50 transition-colors"
+                style={{ height: "100%" }}
+              >
+                <div className="text-sm text-muted-foreground font-mono">{exp.period}</div>
 
-              <div className="space-y-3">
-                <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors flex items-center gap-2">
-                      {exp.url ? (
-                        <a
-                          href={exp.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-2"
-                        >
-                          {exp.title} · {exp.company}
-                          <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
-                        </a>
-                      ) : (
-                        <>
-                          {exp.title} · {exp.company}
-                          <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
-                        </>
-                      )}
-                    </h3>
-                    <p className="text-sm text-muted-foreground">{exp.location}</p>
+                <div className="space-y-3">
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors flex items-center gap-2">
+                        {exp.url ? (
+                          <a
+                            href={exp.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2"
+                          >
+                            {exp.title} · {exp.company}
+                            <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                          </a>
+                        ) : (
+                          <>
+                            {exp.title} · {exp.company}
+                            <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                          </>
+                        )}
+                      </h3>
+                      <p className="text-sm text-muted-foreground">{exp.location}</p>
+                    </div>
+                  </div>
+
+                  <p className="text-muted-foreground text-sm leading-relaxed">{exp.description}</p>
+
+                  <div className="flex flex-wrap gap-2">
+                    {exp.skills.map((skill) => (
+                      <Badge key={skill} variant="secondary" className="text-xs">
+                        {skill}
+                      </Badge>
+                    ))}
                   </div>
                 </div>
-
-                <p className="text-muted-foreground text-sm leading-relaxed">{exp.description}</p>
-
-                <div className="flex flex-wrap gap-2">
-                  {exp.skills.map((skill) => (
-                    <Badge key={skill} variant="secondary" className="text-xs">
-                      {skill}
-                    </Badge>
-                  ))}
-                </div>
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

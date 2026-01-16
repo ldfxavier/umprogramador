@@ -42,7 +42,7 @@ export function Navigation() {
         scrolled ? "bg-background/80 backdrop-blur-lg border-b border-border" : "bg-transparent",
       )}
     >
-      <div className="max-w-5xl mx-auto px-6 lg:px-12">
+      <div className="max-w-5xl mx-auto">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="font-bold text-foreground hover:text-primary transition-colors">
             LX<span className="text-primary">.</span>
