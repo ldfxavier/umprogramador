@@ -12,6 +12,7 @@ const experiences = [
     description:
       "Desenvolvimento full stack utilizando ReactJS, React-Native, NodeJS, PHP e Zend em projetos de consultoria empresarial.",
     skills: ["ReactJS", "React Native", "Node.js", "PHP", "Zend"],
+    url: "https://www.g4f.com.br",
   },
   {
     period: "MAI 2022 — NOV 2023",
@@ -20,6 +21,7 @@ const experiences = [
     location: "Brasília, DF",
     description: "Desenvolvimento backend focado em PHP, NodeJS e Laravel para soluções de TI e consultoria.",
     skills: ["PHP", "Node.js", "Laravel"],
+    url: "https://www.basis.com.br",
   },
   {
     period: "SET 2021 — JUL 2022",
@@ -29,6 +31,7 @@ const experiences = [
     description:
       "Desenvolvimento de APIs e sistemas backend para plataforma de serviços financeiros utilizando PHP, NodeJS, Laravel e Adonis.",
     skills: ["PHP", "Node.js", "Laravel", "Adonis"],
+    url: "https://credpago.com.br",
   },
   {
     period: "JAN 2017 — OUT 2021",
@@ -38,6 +41,7 @@ const experiences = [
     description:
       "Desenvolvimento mobile e web utilizando React-Native, ReactJS, PHP e Laravel para plataforma de social business.",
     skills: ["React Native", "ReactJS", "PHP", "Laravel"],
+    url: "https://youhuul.com.br",
   },
   {
     period: "MAI 2011 — DEZ 2016",
@@ -47,6 +51,7 @@ const experiences = [
     description:
       "Análise de sistemas e desenvolvimento web utilizando PHP, HTML, CSS, JavaScript, além de gestão de projetos com Jira e Bamboo.",
     skills: ["PHP", "JavaScript", "Jira", "Bamboo", "HTML/CSS"],
+    url: "https://saga.com.br",
   },
 ]
 
@@ -72,8 +77,22 @@ export function ExperienceSection() {
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors flex items-center gap-2">
-                      {exp.title} · {exp.company}
-                      <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                      {exp.url ? (
+                        <a
+                          href={exp.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2"
+                        >
+                          {exp.title} · {exp.company}
+                          <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                        </a>
+                      ) : (
+                        <>
+                          {exp.title} · {exp.company}
+                          <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                        </>
+                      )}
                     </h3>
                     <p className="text-sm text-muted-foreground">{exp.location}</p>
                   </div>
