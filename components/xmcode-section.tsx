@@ -108,7 +108,7 @@ export function XMCodeSection() {
             <div className="flex items-center gap-2">
               <Sparkles className="h-4 w-4 text-primary" />
               <h2 className="text-sm font-mono text-primary uppercase tracking-wider">
-                Empreendimento & Engenharia
+                Liderança Técnica & Engenharia
               </h2>
             </div>
             <div className="h-px flex-1 bg-border" />
@@ -127,7 +127,7 @@ export function XMCodeSection() {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
                   </span>
-                  Empresa Fundada & Liderada por Lucas Xavier
+                  Fundada por Lucas Xavier · Direção de TI & CTO
                 </div>
 
                 <h3 className="text-3xl sm:text-4xl font-bold text-foreground tracking-tight flex items-center gap-3">
@@ -138,8 +138,9 @@ export function XMCodeSection() {
                 </h3>
 
                 <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
-                  Empresa de engenharia de software e inteligência artificial especializada em plataformas de alta
-                  criticidade para o setor público e privado. Arquitetura orientada a microsserviços, inteligência
+                  Empresa de tecnologia e inteligência artificial especializada em plataformas de alta
+                  criticidade para o setor público e privado. Sob minha liderança técnica como CTO e arquiteto de software,
+                  projetamos e construímos ecossistemas robustos com arquitetura de microsserviços, inteligência
                   artificial aplicada à automação de processos, biometria facial, votação eletrônica em tempo real e
                   assinatura digital padrão ICP-Brasil.
                 </p>
@@ -153,7 +154,7 @@ export function XMCodeSection() {
                   </a>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <a href="#contact">Falar sobre Projetos</a>
+                  <a href="#contact">Falar sobre Projetos Técnicos</a>
                 </Button>
               </div>
             </div>

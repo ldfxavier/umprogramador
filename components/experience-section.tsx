@@ -18,11 +18,11 @@ interface Experience {
 const experiences: Experience[] = [
   {
     period: "2023 — PRESENTE",
-    title: "Fundador & Lead Software Architect / CEO",
+    title: "Fundador & CTO / Lead Software Architect",
     company: "XM CODE",
     location: "Brasília, DF",
     description:
-      "Fundador e líder técnico à frente da concepção, arquitetura e desenvolvimento de ecossistemas corporativos e públicos de alta escala. Criação das plataformas XM LEGIS (14 módulos com IA, WebSockets e ICP-Brasil) e XM Gestão Pública (35 módulos com biometria facial, previdência RPPS e compras públicas). Gestão técnica, liderança de produto e engenharia com IA aplicada.",
+      "Fundador e responsável por toda a área de TI, engenharia e arquitetura de software da empresa (CTO). Liderança técnica na concepção, arquitetura de sistemas, infraestrutura e desenvolvimento de ecossistemas corporativos e governamentais de alta escala. Criação das plataformas XM LEGIS (14 módulos com IA, WebSockets e ICP-Brasil) e XM Gestão Pública (35 módulos com biometria facial, previdência RPPS e compras públicas).",
     skills: [
       "Next.js 15",
       "NestJS",
@@ -101,7 +101,7 @@ export function ExperienceSection() {
             <div className="h-px flex-1 bg-border" />
           </div>
           <p className="text-center text-xs text-muted-foreground max-w-xl mx-auto mb-12">
-            Trajetória de mais de 16 anos construindo soluções de tecnologia, liderando engenharia de produtos e desenvolvendo sistemas de missão crítica.
+            Trajetória de mais de 16 anos construindo soluções de tecnologia, liderando a área técnica de TI e desenvolvendo sistemas de missão crítica.
           </p>
         </ScrollReveal>
 

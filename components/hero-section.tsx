@@ -21,7 +21,7 @@ export function HeroSection() {
             <ScrollReveal direction="right" delay={0.1}>
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-mono tracking-wider shadow-sm">
                 <Sparkles className="h-3.5 w-3.5" />
-                <span>Fundador na XM CODE · Arquiteto de Software</span>
+                <span>Fundador & CTO na XM CODE · Arquiteto de Software</span>
               </div>
             </ScrollReveal>
 
@@ -34,7 +34,7 @@ export function HeroSection() {
             <ScrollReveal direction="right" delay={0.3}>
               <p className="text-muted-foreground text-base sm:text-lg lg:text-xl max-w-2xl leading-relaxed">
                 Engenheiro de Software & Lead Architect com <span className="text-foreground font-semibold">+16 anos</span> de
-                experiência. Especialista na criação de ecossistemas corporativos e governamentais de alta criticidade,
+                experiência. Responsável pela liderança técnica de TI, arquitetura de ecossistemas corporativos e governamentais de alta criticidade,
                 inteligência artificial aplicada, microsserviços e sistemas de alta escala.
               </p>
             </ScrollReveal>
@@ -115,14 +115,14 @@ export function HeroSection() {
               {/* Photo */}
               <Image
                 src="/images/lucas-xavier.png"
-                alt="Lucas Xavier - Fundador XM CODE"
+                alt="Lucas Xavier - Fundador & CTO XM CODE"
                 fill
                 className="rounded-full object-cover p-3"
                 priority
               />
               {/* Floating Badge */}
               <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-card/90 border border-primary/40 backdrop-blur-md px-3.5 py-1 rounded-full text-[11px] font-mono text-primary shadow-xl shrink-0 whitespace-nowrap">
-                CEO & Lead Architect
+                Fundador & CTO
               </div>
             </div>
           </ScrollReveal>

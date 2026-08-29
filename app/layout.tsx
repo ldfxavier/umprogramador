@@ -8,12 +8,14 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" })
 
 export const metadata: Metadata = {
-  title: "Lucas Xavier | Fundador da XM CODE · Arquiteto de Software & Engenheiro Full-Stack Sênior",
+  title: "Lucas Xavier | Fundador & CTO da XM CODE · Arquiteto de Software & Engenheiro Full-Stack Sênior",
   description:
-    "Lucas Xavier: Fundador da XM CODE (xmcode.com.br), Engenheiro de Software & Lead Architect com +16 anos de experiência em plataformas públicas e corporativas de alta criticidade, IA Aplicada, Next.js, Node.js, NestJS e DDD.",
+    "Lucas Xavier: Fundador & CTO da XM CODE (xmcode.com.br), Engenheiro de Software & Lead Architect com +16 anos de experiência em plataformas públicas e corporativas de alta criticidade, IA Aplicada, Next.js, Node.js, NestJS e DDD.",
   keywords: [
     "Lucas Xavier",
     "XM CODE",
+    "CTO",
+    "Diretor de Tecnologia",
     "Arquiteto de Software",
     "Engenheiro de Software Sênior",
     "Desenvolvedor Full Stack",
@@ -28,9 +30,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Lucas Xavier", url: "https://xmcode.com.br" }],
   openGraph: {
-    title: "Lucas Xavier | Fundador da XM CODE & Arquiteto de Software Sênior",
+    title: "Lucas Xavier | Fundador & CTO da XM CODE & Arquiteto de Software Sênior",
     description:
-      "+16 anos de experiência em engenharia de software, sistemas governamentais de grande porte, inteligência artificial e ecossistemas escaláveis.",
+      "+16 anos de experiência liderando a área de TI, engenharia de software, arquitetura de sistemas governamentais de grande porte, inteligência artificial e ecossistemas escaláveis.",
     url: "https://umprogramador.com.br",
     siteName: "Lucas Xavier - Portfólio & Currículo",
     locale: "pt_BR",

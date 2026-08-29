@@ -8,7 +8,7 @@ export function Footer() {
           <span>© {new Date().getFullYear()} Lucas Xavier.</span>
           <span className="hidden sm:inline">·</span>
           <span>
-            Fundador na{" "}
+            Fundador & CTO na{" "}
             <a
               href="https://xmcode.com.br"
               target="_blank"

@@ -22,8 +22,8 @@ export function ContactSection() {
               Vamos construir soluções robustas juntos?
             </h3>
             <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
-              Seja para parcerias corporativas, projetos públicos de alta escala, consultoria em arquitetura de software
-              ou desenvolvimento sob medida através da <strong className="text-foreground">XM CODE</strong>, estou à
+              Seja para projetos técnicos de alta criticidade, consultoria em arquitetura de software e IA aplicada
+              ou desenvolvimento de plataformas robustas através da <strong className="text-foreground">XM CODE</strong>, estou à
               disposição.
             </p>
 

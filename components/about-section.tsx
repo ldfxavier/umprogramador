@@ -59,26 +59,26 @@ export function AboutSection() {
             <ScrollReveal direction="left" delay={0.2}>
               <p className="text-muted-foreground leading-relaxed">
                 Com mais de <span className="text-foreground font-semibold">16 anos de experiência sólida</span> no mercado
-                de tecnologia, atuo como Fundador e Arquiteto Líder na{" "}
-                <span className="text-primary font-medium">XM CODE</span>, projetando e entregando plataformas robustas que
-                transformam a administração pública e operações empresariais.
+                de tecnologia, atuo como Fundador e Diretor de Tecnologia (CTO) na{" "}
+                <span className="text-primary font-medium">XM CODE</span>, sendo o responsável técnico por toda a área de TI,
+                arquitetura de software e desenvolvimento de plataformas robustas que atendem aos setores público e privado.
               </p>
             </ScrollReveal>
 
             <ScrollReveal direction="left" delay={0.3}>
               <p className="text-muted-foreground leading-relaxed">
-                Minha especialidade engloba desde a modelagem de domínio complexo com{" "}
+                Minha especialidade técnica engloba desde a modelagem de domínio complexo com{" "}
                 <span className="text-foreground">Domain-Driven Design (DDD) e Clean Architecture</span> até a
                 implementação de soluções inovadoras de{" "}
-                <span className="text-foreground">Inteligência Artificial Aplicada</span>, como agentes autônomos,
+                <span className="text-foreground">Inteligência Artificial Aplicada</span>, microsserviços escaláveis,
                 redação legislativa assistida por IA, biometria facial e assinatura digital com padrão ICP-Brasil.
               </p>
             </ScrollReveal>
 
             <ScrollReveal direction="left" delay={0.4}>
               <p className="text-muted-foreground leading-relaxed">
-                Acredito na engenharia de software sustentável: código limpo, performático, seguro e estritamente aderente
-                às regras de negócio e de governança (LGPD).
+                Acredito na engenharia de software sustentável e rigorosa: código limpo, de alta performance, seguro e estritamente aderente
+                às melhores práticas de governança técnica e LGPD.
               </p>
             </ScrollReveal>
           </div>
